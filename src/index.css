@@ -1,0 +1,117 @@
+:root {
+  /* Colors - Matched to Kern Type original */
+  --bg-primary: #2b2d3a;
+  --bg-secondary: #21232d;
+  --bg-tertiary: #1b1c24;
+  
+  --text-primary: #ffffff;
+  --text-secondary: #8e92a4;
+  --text-muted: #646777;
+  
+  --accent: #3897f0; /* Classic Kern Type Blue */
+  --accent-glow: rgba(56, 151, 240, 0.2);
+  --accent-light: #5cb5ff;
+  
+  --success: #00dfa2;
+  --cyan-user: #3897f0; /* User letter is Cyan-Blue */
+  --magenta-expert: #ff4a5a; /* Expert letter is Red-Pink */
+  
+  --border-light: rgba(255, 255, 255, 0.05);
+  
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Georgia', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+/* Original-style Done button */
+.btn-done {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 8px 24px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.btn-done:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.btn-done:active {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.btn-text-only {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+.btn-text-only:hover {
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
