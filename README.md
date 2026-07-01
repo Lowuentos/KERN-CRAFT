@@ -1,5 +1,7 @@
 # Kern Craft 🎨 — A Letter Spacing Game
 
+OYNAMAK İÇİN: https://lowuentos.github.io/KERN-CRAFT/
+
 **Kern Craft**, ünlü tipografi oyunu **Kern Type**'ın (https://type.method.ac) modernleştirilmiş, zenginleştirilmiş ve **sınırsız (sonsuz) oynanışa** sahip bir sürümüdür. 
 
 ---
