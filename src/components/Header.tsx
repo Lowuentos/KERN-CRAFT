@@ -36,7 +36,7 @@ export const Header: React.FC<HeaderProps> = ({
           className="btn-text-only" 
           onClick={onShowInstructions}
         >
-          Keyboard Shortcuts
+          Nasıl Oynanır?
         </button>
       </div>
     </header>
